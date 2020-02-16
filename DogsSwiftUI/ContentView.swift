@@ -85,7 +85,7 @@ struct StoryView: View {
                 .scaledToFill()
                 .frame(width: 75, height: 75)
                 .clipShape(Circle())
-                .overlay(RoundedRectangle(cornerRadius: 75 / 2.0).stroke(Color.red, lineWidth: 1))
+                .overlay(Circle().stroke(Color.red, lineWidth: 1))
                 .shadow(radius: 3)
             Text(story.userName).font(.caption)
         }
